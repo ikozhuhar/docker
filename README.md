@@ -12,5 +12,5 @@ sudo docker run -d --name=grafana --network=monitoring--ip 10.10.10.12 -p 3000:3
 {  "bip": "172.31.255.129/24", "fixed-cidr": "172.31.255.129/24", "registry-mirrors": ["https://mirror.gcr.io"] }
 ```
 
-[Docker Docs](https://docs.docker.com/manuals/)
-[Docker – виртуализация сети. Часть 1](https://cloud.k2.tech/blog/about-technologies/docker-virtualizatsiya-seti-part1/)
+1. [Docker Docs](https://docs.docker.com/manuals/)
+2. [Docker – виртуализация сети. Часть 1](https://cloud.k2.tech/blog/about-technologies/docker-virtualizatsiya-seti-part1/)
