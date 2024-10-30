@@ -6,6 +6,11 @@ sudo docker run -d --name=prometheus --network=monitoring --ip 10.10.10.10 -p 90
 sudo docker run -d --name=node_exporter --network=monitoring --ip 10.10.10.11 -p 9100:9100 carlosedp/node_exporter
 sudo docker run -d --name=grafana --network=monitoring--ip 10.10.10.12 -p 3000:3000 grafana/grafana-enterprise
 ```
+Вход в контейнер из под root
+```
+sudo docker exec -it -u 0 6fea375fc0bb /bin/bash
+```
+
 
 /etc/docker/daemon.json
 ```
