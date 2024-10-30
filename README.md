@@ -7,6 +7,7 @@ sudo docker run -d --name=node_exporter --network=monitoring -p 9100:9100 carlos
 sudo docker run -d --name=grafana --network=monitoring -p 3000:3000 grafana/grafana-enterprise
 ```
 
+/etc/docker/daemon.json
 ```
 {  "bip": "172.31.255.129/24", "fixed-cidr": "172.31.255.129/24", "registry-mirrors": ["https://mirror.gcr.io"] }
 ```
