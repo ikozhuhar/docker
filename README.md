@@ -9,9 +9,9 @@ Docker гарантирует, что ваше приложение будет �
 
 #### [[⬆]](#toc) <a name='1'>Инструкция по установке Docker на Linux</a>
 
-1. [Установке docker на Linux](https://docs.docker.com/engine/install/ubuntu/)
-2. [Запуск докера не из-под суперпользователя](https://docs.docker.com/engine/install/linux-postinstall/)
-3. [Установка docker-compose](https://docs.docker.com/compose/install/standalone/)
+1. [Установке Docker на Linux](https://docs.docker.com/engine/install/ubuntu/)
+2. [Запуск Docker не из-под суперпользователя](https://docs.docker.com/engine/install/linux-postinstall/)
+3. [Установка Docker-Compose](https://docs.docker.com/compose/install/standalone/)
 
 ```
 sudo docker network create -d bridge monitoring
