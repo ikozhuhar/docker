@@ -1,8 +1,8 @@
 # docker
 
-[Инструкция по установке докера на Linux](https://docs.docker.com/engine/install/ubuntu/)
-[Запуск докера не из-под суперпользователя](https://docs.docker.com/engine/install/linux-postinstall/)
-[Установка docker-compose](https://docs.docker.com/compose/install/standalone/)
+1. [Инструкция по установке докера на Linux](https://docs.docker.com/engine/install/ubuntu/)
+2. [Запуск докера не из-под суперпользователя](https://docs.docker.com/engine/install/linux-postinstall/)
+3. [Установка docker-compose](https://docs.docker.com/compose/install/standalone/)
 
 ```
 sudo docker network create -d bridge monitoring
