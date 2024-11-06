@@ -35,8 +35,8 @@ docker exec --help
 
 #### Работа с образами
 
-docker images или docker image ls — посмотреть список образов [ссылка](https://docs.docker.com/reference/cli/docker/image/ls/), [ссылка](https://docs.docker.com/reference/cli/docker/image/ls/)  
-docker rmi <образ> [образ...] или docker image rm <образ> [образ...] — удалить образ(ы) (ссылка, ссылка)  
+docker images или docker image ls — посмотреть список образов [ссылка](https://docs.docker.com/reference/cli/docker/image/ls/)
+docker rmi <образ> [образ...] или docker image rm <образ> [образ...] — удалить образ(ы) [ссылка](https://docs.docker.com/reference/cli/docker/image/rm/)
 
 
 #### [[⬆]](#toc) <a name='2'>Команды</a>
