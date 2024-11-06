@@ -39,11 +39,11 @@ sudo docker exec --help
 `sudo docker rmi <образ> [образ...]` или `docker image rm <образ> [образ...]` — удалить образ(ы) [ссылка](https://docs.docker.com/reference/cli/docker/image/rm/)  
 
 #### Работа с контейнерами
-`sudo docker run <образ> — поднять контейнер на основе образа [ссылка](https://docs.docker.com/reference/cli/docker/container/run/)  
-`sudo docker run --name <имя> <образ> — при поднятии присвоить имя контейнеру [ссылка](https://docs.docker.com/engine/containers/run/#name---name)  
-`sudo docker run --rm <образ> — удалять контейнер после завершения его работы [ссылка](https://docs.docker.com/engine/containers/run/#clean-up---rm)  
-`sudo docker run -it <образ> — позволяет «войти» в контейнер во время его создания [ссылка](https://docs.docker.com/reference/cli/docker/container/run/#assign-name-and-allocate-pseudo-tty---name--it), [ссылка](https://docs.docker.com/engine/containers/run/#foreground)  
-`sudo docker run -d <образ> — поднять контейнер в фоновом режиме [ссылка](https://docs.docker.com/engine/containers/run/#detached--d)  
+`sudo docker run <образ>` — поднять контейнер на основе образа [ссылка](https://docs.docker.com/reference/cli/docker/container/run/)  
+`sudo docker run --name <имя> <образ>` — при поднятии присвоить имя контейнеру [ссылка](https://docs.docker.com/engine/containers/run/#name---name)  
+`sudo docker run --rm <образ>` — удалять контейнер после завершения его работы [ссылка](https://docs.docker.com/engine/containers/run/#clean-up---rm)  
+`sudo docker run -it <образ>` — позволяет «войти» в контейнер во время его создания [ссылка](https://docs.docker.com/reference/cli/docker/container/run/#assign-name-and-allocate-pseudo-tty---name--it), [ссылка](https://docs.docker.com/engine/containers/run/#foreground)  
+`sudo docker run -d <образ>` — поднять контейнер в фоновом режиме [ссылка](https://docs.docker.com/engine/containers/run/#detached--d)  
 
 `sudo docker ps` — список активных (работающих) контейнеров [ссылка](https://docs.docker.com/reference/cli/docker/container/ls/)  
 `sudo docker ps -a` — список всех контейнеров [ссылка](https://docs.docker.com/reference/cli/docker/container/ls/#show-both-running-and-stopped-containers)  
