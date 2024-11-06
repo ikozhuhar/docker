@@ -17,6 +17,11 @@ Docker гарантирует, что ваше приложение будет �
 
 #### [[⬆]](#toc) <a name='2'>Первый контейнер</a>
 
+
+
+
+#### [[⬆]](#toc) <a name='2'>Команды</a>
+
 ```
 sudo docker network create -d bridge monitoring
 sudo docker run -d --name=prometheus --network=monitoring --ip 10.10.10.10 -p 9090:9090 bitnami/prometheus:latest
