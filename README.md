@@ -23,6 +23,14 @@ sudo docker run -it node
 sudo docker start 551b9eccc604
 sudo docker rm 98365c1432c0 happy_volhard
 sudo docker exec -it a1682761a203 /bin/bash
+
+docker ps -q
+docker ps -qa
+docker stop $(docker ps -q)
+docker rm  $(docker ps -qa)
+
+docker run --help
+docker exec --help
 ```
 
 
