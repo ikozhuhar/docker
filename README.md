@@ -16,7 +16,14 @@ Docker гарантирует, что ваше приложение будет �
 
 
 #### [[⬆]](#toc) <a name='2'>Первый контейнер</a>
-
+```
+sudo docker run -d yandex/clickhouse-server
+sudo docker stop 87844e44ec17
+sudo docker run -it node
+sudo docker start 551b9eccc604
+sudo docker rm 98365c1432c0 happy_volhard
+sudo docker exec -it a1682761a203 /bin/bash
+```
 
 
 
