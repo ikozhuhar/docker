@@ -61,18 +61,20 @@ sudo docker exec --help
 
 **Dockerfile** - это обычный текстовый файл, который описывает то, каким должен быть наш образ.
 
-`FROM node:17` - собираем образ на основе образа node:17
-`COPY ./script.js /app/script.js` - помещаем файл программы script.js в контейнер
-`CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера
-`WORKDIR /home/ikozhuhar/GITHUB/docker` - создаем рабочую директорию в контейнере
-`COPY ./script.sh ./script.sh` - копируем файл из хоста в контейнер
-`RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем нужные программы 
+`FROM node:17` - собираем образ на основе образа node:17  
+`COPY ./script.js /app/script.js` - помещаем файл программы script.js в контейнер  
+`CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера  
+`WORKDIR /home/ikozhuhar/GITHUB/docker` - создаем рабочую директорию в контейнере  
+`COPY ./script.sh ./script.sh` - копируем файл из хоста в контейнер  
+`RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем нужные программы  
 
-Пример
+**Пример**
 ```
 # Dockerfile
 FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y vim nano wget curl
 WORKDIR /home/ikozhuhar/GITHUB/docker
+COPY ./script.sh ./script.sh
 ```
 
 `docker build -t custom_ubuntu:1 .` - собираем свой образ из файла Dockerfile
