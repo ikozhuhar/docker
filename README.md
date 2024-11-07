@@ -3,6 +3,8 @@
 #### <a name='toc'>Содержание</a>
 1. [Инструкция по установке докера на Linux](#1)
 2. [Первый контейнер](#2)
+3. [Создание образа](#3)
+4. [Собственные образы на Docker Hub](#???????)
 
 Docker – это программная платформа для быстрой разработки, тестирования и развертывания приложений. Docker упаковывает ПО в стандартизованные блоки, которые называются контейнерами. Каждый контейнер включает все необходимое для работы приложения: библиотеки, системные инструменты, код и среду исполнения. Это упрощает перенос приложения на другую инфраструктуру.
 
@@ -52,6 +54,39 @@ sudo docker exec --help
 `sudo docker rm <контейнер> [контейнер...]` — удалить контейнер(ы)[ссылка](https://docs.docker.com/reference/cli/docker/container/rm/)  
 `sudo docker exec <контейнер> команда` — запустить команду в работающем контейнер [ссылка](https://docs.docker.com/reference/cli/docker/container/exec/)  
 `sudo docker exec -it <контейнер> bash` — запустить bash процесс и «войти» в контейнер [ссылка](https://docs.docker.com/reference/cli/docker/container/exec/#run-docker-exec-on-a-running-container)  
+
+
+
+#### [[⬆]](#toc) <a name='3'>Создание образа</a>
+
+**Dockerfile** - это обычный текстовый файл, который описывает то, каким должен быть наш образ.
+
+`FROM node:17` - собираем образ на основе образа node:17
+`COPY ./script.js /app/script.js` - помещаем файл программы script.js в контейнер
+`CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера
+`WORKDIR /home/ikozhuhar/GITHUB/docker` - создаем рабочую директорию в контейнере
+`COPY ./script.sh ./script.sh` - копируем файл из хоста в контейнер
+`RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем нужные программы 
+
+Пример
+```
+# Dockerfile
+FROM ubuntu:20.04
+WORKDIR /home/ikozhuhar/GITHUB/docker
+```
+
+`docker build -t custom_ubuntu:1 .` - собираем свой образ из файла Dockerfile
+
+
+
+#### [[⬆]](#toc) <a name='#######'>Собственные образы на Docker Hub</a>
+
+`docker login` - логинимся на хабе  
+`docker images` - смотрим образы локально
+`docker tag node:latest mrcojuhari/node:latest` - для того, чтобы пушить в образ нужно подставить логин и образ  
+`docker push mrcojuhari/node:latest` - заливаем на хаб  
+
+
 
 #### [[⬆]](#toc) <a name='2'>Команды</a>
 
