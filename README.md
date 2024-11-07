@@ -1,5 +1,7 @@
 ### Docker
 
+Остановился на уроке 3.4
+
 #### <a name='toc'>Содержание</a>
 1. [Инструкция по установке докера на Linux](#1)
 2. [Первый контейнер](#2)
@@ -66,7 +68,7 @@ sudo docker exec --help
 `CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера  
 `WORKDIR /home/ikozhuhar/GITHUB/docker` - создаем рабочую директорию в контейнере  
 `COPY ./script.sh ./script.sh` - копируем файл из хоста в контейнер  
-`RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем нужные программы  
+`RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем программы  
 
 **Пример**
 ```
