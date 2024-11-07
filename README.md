@@ -86,7 +86,7 @@ COPY ./script.sh ./script.sh
 #### [[⬆]](#toc) <a name='#######'>Собственные образы на Docker Hub</a>
 
 `docker login` - логинимся на хабе  
-`docker images` - смотрим образы локально
+`docker images` - смотрим образы локально  
 `docker tag node:latest mrcojuhari/node:latest` - для того, чтобы пушить в образ нужно подставить логин и образ  
 `docker push mrcojuhari/node:latest` - заливаем на хаб  
 
