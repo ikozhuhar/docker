@@ -1,6 +1,10 @@
 ### Docker
 
-Остановился на уроке 3.4
+Остановился на уроке 3.5
+дом работа - 
+https://github.com/io-sys/16-docker
+https://github.com/staybox/otus_dz15
+
 
 #### <a name='toc'>Содержание</a>
 1. [Инструкция по установке докера на Linux](#1)
@@ -64,11 +68,12 @@ sudo docker exec --help
 **Dockerfile** - это обычный текстовый файл, который описывает то, каким должен быть наш образ.
 
 `FROM node:17` - собираем образ на основе образа node:17  
-`COPY ./script.js /app/script.js` - помещаем файл программы script.js в контейнер  
-`CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера  
+`COPY ./script.js /app/script.js` - помещаем файл программы script.js в контейнер   
 `WORKDIR /home/ikozhuhar/GITHUB/docker` - создаем рабочую директорию в контейнере  
 `COPY ./script.sh ./script.sh` - копируем файл из хоста в контейнер  
 `RUN apt-get update && apt-get install vim nano wget curl` - обновляем и устанавливаем программы  
+`CMD ["node", "/app/script.js"]` - запускаем программу script.js при поднятии контейнера  
+`ENTRYPOINT` - 
 
 **Пример**
 ```
@@ -87,7 +92,7 @@ COPY ./script.sh ./script.sh
 
 `docker login` - логинимся на хабе  
 `docker images` - смотрим образы локально  
-`docker tag node:latest mrcojuhari/node:latest` - для того, чтобы пушить в образ нужно подставить логин и образ  
+`docker tag node:latest mrcojuhari/node:latest` - создаем свою версию образа  
 `docker push mrcojuhari/node:latest` - заливаем на хаб  
 
 
@@ -99,6 +104,7 @@ sudo docker network create -d bridge monitoring
 sudo docker run -d --name=prometheus --network=monitoring --ip 10.10.10.10 -p 9090:9090 bitnami/prometheus:latest
 sudo docker run -d --name=node_exporter --network=monitoring --ip 10.10.10.11 -p 9100:9100 carlosedp/node_exporter
 sudo docker run -d --name=grafana --network=monitoring--ip 10.10.10.12 -p 3000:3000 grafana/grafana-enterprise
+sudo docker history <image_name>
 ```
 Вход в контейнер из под root
 ```
@@ -113,3 +119,4 @@ sudo docker exec -it -u 0 6fea375fc0bb /bin/bash
 
 1. [Docker Docs](https://docs.docker.com/manuals/)
 2. [Docker – виртуализация сети. Часть 1](https://cloud.k2.tech/blog/about-technologies/docker-virtualizatsiya-seti-part1/)
+3. [50 вопросов по Docker, которые задают на собеседованиях](https://habr.com/ru/companies/slurm/articles/528206/)
