@@ -163,6 +163,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
+![image](https://github.com/user-attachments/assets/139d35af-accc-449b-8187-74e30013e450)
+
+
 
 
 
