@@ -119,6 +119,8 @@ sudo docker exec -it -u 0 6fea375fc0bb /bin/bash
 ```
 
 
+
+
 #### [[⬆]](#toc) <a name='5'>Лабораторная работа</a>
 
 1. Установка с использованием репозитория apt
@@ -139,7 +141,7 @@ echo \
 sudo apt-get update
 ```
 
-2. Установите пакеты Docker
+2. Установка Docker
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
@@ -150,6 +152,16 @@ sudo docker run hello-world
 ```
 ![image](https://github.com/user-attachments/assets/bc14c81a-ab3a-4149-a638-67eff009270d)
 
+4. Установка Docker Compose
+```
+curl -SL https://github.com/docker/compose/releases/download/v2.30.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+```
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+```
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
 
 
 
