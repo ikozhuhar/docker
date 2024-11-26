@@ -184,6 +184,12 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 Смотрим результат
 ![image](https://github.com/user-attachments/assets/3700b5f2-7482-4c90-a532-b2d3e426cc75)
 
+![image](https://github.com/user-attachments/assets/f2f963c5-c95c-4a5f-a7bb-b273ce81a353)
+
+![image](https://github.com/user-attachments/assets/c001c90b-e388-4aba-b16c-119fb3db9894)
+
+
+
 
 
 
