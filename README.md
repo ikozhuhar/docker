@@ -1,11 +1,5 @@
 ### Docker
 
-Остановился на уроке 3.5
-дом работа - 
-https://github.com/io-sys/16-docker
-https://github.com/staybox/otus_dz15
-
-
 #### <a name='toc'>Содержание</a>
 1. [Инструкция по установке докера на Linux](#1)
 2. [Первый контейнер](#2)
