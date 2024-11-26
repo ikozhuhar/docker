@@ -181,6 +181,12 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 Запускаем контейнер
 ![image](https://github.com/user-attachments/assets/3476b8d8-cfa4-4b09-aaf8-56df4fba5fdc)
 
+Смотрим результат
+![image](https://github.com/user-attachments/assets/3700b5f2-7482-4c90-a532-b2d3e426cc75)
+
+
+
+
 
 
 
