@@ -166,16 +166,20 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 **Контейнер** — это способ упаковки приложения и всех его зависимостей, для запуска в изолированной среде, не влияющей на основную операционную систему. 
 
 
-Собираем образ
+_Собираем образ_
+
 ![image](https://github.com/user-attachments/assets/0b4ba98b-d02a-48fe-a7a2-a8c91cffd56a)
 
-Смотрим результат
+_Смотрим результат_
+
 ![image](https://github.com/user-attachments/assets/f60072c7-e6dd-4347-8574-aafe825eb96a)
 
-Запускаем контейнер
+_Запускаем контейнер_
+
 ![image](https://github.com/user-attachments/assets/3476b8d8-cfa4-4b09-aaf8-56df4fba5fdc)
 
-Смотрим результат
+_Смотрим результат_
+
 ![image](https://github.com/user-attachments/assets/3700b5f2-7482-4c90-a532-b2d3e426cc75)
 
 ![image](https://github.com/user-attachments/assets/f2f963c5-c95c-4a5f-a7bb-b273ce81a353)
