@@ -200,12 +200,13 @@ _Смотрим результат_
 
 #### Реальная проблема
 Much easier way to do so:
-
-1. sudo systemctl stop docker
+```ruby
+1. # sudo systemctl stop docker
 sudo systemctl stop docker
-2. Move existing docker directory to new location
+2. # Move existing docker directory to new location
 sudo mv /var/lib/docker/ /path/to/new/docker/
-3. Create symbolic link
+3. # Create symbolic link
 sudo ln -s /path/to/new/docker/ /var/lib/docker
-4. Start docker service
+4. # Start docker service
 sudo systemctl start docker
+```
