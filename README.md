@@ -194,3 +194,18 @@ _Смотрим результат_
 1. [Docker Docs](https://docs.docker.com/manuals/)
 2. [Docker – виртуализация сети. Часть 1](https://cloud.k2.tech/blog/about-technologies/docker-virtualizatsiya-seti-part1/)
 3. [50 вопросов по Docker, которые задают на собеседованиях](https://habr.com/ru/companies/slurm/articles/528206/)
+
+
+<br>
+
+#### Реальная проблема
+Much easier way to do so:
+
+1. sudo systemctl stop docker
+sudo systemctl stop docker
+2. Move existing docker directory to new location
+sudo mv /var/lib/docker/ /path/to/new/docker/
+3. Create symbolic link
+sudo ln -s /path/to/new/docker/ /var/lib/docker
+4. Start docker service
+sudo systemctl start docker
