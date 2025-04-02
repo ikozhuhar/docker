@@ -187,12 +187,7 @@ _Смотрим результат_
 ![image](https://github.com/user-attachments/assets/c001c90b-e388-4aba-b16c-119fb3db9894)
 
 
-
-
-
-
-
-
+<br>
 
 #### [[⬆]](#toc) <a name='5'>Дополнительные ресурсы</a>
 
