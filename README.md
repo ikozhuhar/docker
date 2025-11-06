@@ -216,7 +216,7 @@ systemctl restart docker
 
 <br>
 
-_Задача: login push pull_
+_Задача: login | push | pull_
 
 ```ruby
 sudo docker tag openproject:latest mrcojuhari/openproject:latest
