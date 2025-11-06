@@ -213,6 +213,30 @@ systemctl daemon-reload
 systemctl restart docker
 ```
 
+
+<br>
+
+_Задача: login push pull_
+
+```ruby
+sudo docker tag openproject:latest mrcojuhari/openproject:latest
+sudo docker tag ikozhuhar/postgres:15 mrcojuhari/postgres:15
+sudo docker tag ikozhuhar/postgres:15 mrcojuhari/postgres:16
+
+sudo docker login -u mrcojuhari
+
+sudo docker push mrcojuhari/openproject:latest
+sudo docker push mrcojuhari/postgres:15
+sudo docker push mrcojuhari/postgres:16
+
+sudo docker pull mrcojuhari/openproject:latest
+sudo docker pull mrcojuhari/postgres:15
+sudo docker pull mrcojuhari/postgres:16
+```
+
+
+
+
 <br>
 
 #### [[⬆]](#toc) <a name='5'>Дополнительные ресурсы</a>
