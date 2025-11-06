@@ -187,6 +187,32 @@ _Смотрим результат_
 ![image](https://github.com/user-attachments/assets/c001c90b-e388-4aba-b16c-119fb3db9894)
 
 
+
+<br>
+
+_Проблема: Не скачиваются образы в Docker | Ошибка timeout_
+
+```ruby
+nano /etc/docker/daemon.json
+	{
+	  "dns": ["192.168.2.3", "192.168.2.6"],
+	  "registry-mirrors": [
+		"https://mirror.gcr.io",
+		"https://dockerhub.timeweb.cloud",
+		"https://dockerhub1.beget.com",
+		"https://registry.docker-cn.com",
+		"https://c.163.com",
+		"https://daocloud.io",
+		"https://ghcr.io",
+		"https://quay.io",
+		"https://public.ecr.aws"
+	  ]
+	}
+
+systemctl daemon-reload
+systemctl restart docker
+```
+
 <br>
 
 #### [[⬆]](#toc) <a name='5'>Дополнительные ресурсы</a>
